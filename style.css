@@ -1,21 +1,91 @@
 /* You're welcome to change any of this! */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0px;
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     font-family: Arial, sans-serif;
+    gap: 20px;
 }
-header, section {
-    padding: 20px;
+#header{
+    background-color: rgb(189, 189, 189);
+    padding: 30px;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-p, li {
-    line-height: 1.5em;
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(4, 98, 98);
+    transition: 0.1s;
+    transform: scale(1.2);
 }
 
+#tutorials{
+    background-color: rgb(185, 227, 241);
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#tutorials:hover{
+    filter: saturate(200%);
+    width: 80%;
+}
+#lectures{
+    background-color: rgb(224, 192, 239);
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   
+}
+#lectures:hover{
+    filter: saturate(200%);
+    width: 80%;
+}
 #inspiration {
-    background-color: #F0F0F0;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: #ecaed0;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   
+}
+#inspiration:hover{
+    filter: saturate(200%);
+    width: 80%;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 80vh;
+}
+
+h1, h2{
+    font-family: 'Press Start 2P', cursive;
 }
