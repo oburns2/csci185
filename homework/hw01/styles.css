@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Your CSS Code Here! */
+
+nav{
+}
+
+ul{
+display:flex;
+flex-direction: row;
+gap: 20px;
+justify-content: right;
+padding: 20px;
+list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
