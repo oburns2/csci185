@@ -83,9 +83,28 @@ a:hover{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    height: 80vh;
+    height: 100vh;
 }
 
 h1, h2{
     font-family: 'Press Start 2P', cursive;
+}
+
+#homework{
+    background-color:rgb(180, 255, 200);
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#homework:hover{
+    filter: saturate(200%);
+    width: 80%;
 }
