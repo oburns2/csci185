@@ -12,7 +12,15 @@ body {
 
 /* Your CSS Code Here! */
 
-nav{
+header{
+    background-color: teal;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 ul{
@@ -27,4 +35,102 @@ list-style: none;
 a{
     text-decoration: none;
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    
+}
+
+h1{
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about{
+    padding: 100px;
+}
+
+#projects{
+    padding: 100px;
+    background-color: rgb(236, 236, 236);
+}
+
+.project-holder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    gap: 20px;
+}
+
+.contact-details{
+    width: 100%;
+    display: flex;
+}
+
+form{
+    width: 70%;
+}
+
+input, textarea{
+    background-color: rgb(225, 225, 225);
+    border-radius: 5%;
+    padding: 10px;
+    margin: 5px;
+}
+
+#name{
+    width: 20%;
+}
+
+#email{
+width: 70%;
+}
+
+#message{
+width: 90%
+}
+
+#submit{
+    background-color: teal;
+    color: white;
+}
+
+#contact-info{
+    width: 20%;
+}
+
+footer{
+    background-color:rgb(236, 236, 236);
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
 }
