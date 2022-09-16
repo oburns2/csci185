@@ -7,21 +7,72 @@ body{
     font-family: Arial, sans-serif;
     gap: 20px;
 }
+
 #header{
     background-color: rgb(189, 189, 189);
     padding: 30px;
-    height: 10vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+    background-image: url('grid.png');
 }
+
+#header:hover{
+    height: 30vh;
+    transition: 0.5s;
+}
+
+#header:hover #nav{
+    transition: 0.5s;
+    opacity: 100%;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.navlink-1, .navlink-2, .navlink-3, .navlink-4, .navlink-5{
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    transition: all 0.1s;
+    color: black;
+    border: solid 1px black;
+    padding: 10px;
+}
+
+.navlink-1:hover{
+    background-color: rgb(185, 227, 241);
+}
+
+.navlink-2:hover{
+    background-color: rgb(224, 192, 239);
+}
+
+.navlink-3:hover{
+    background-color:rgb(180, 255, 200);
+}
+
+.navlink-4:hover{
+    background-color: rgb(255, 248, 180);
+}
+
+.navlink-5:hover{
+    background-color: #ecaed0;
+}
+
 a{
     text-decoration: none;
 }
 a:hover{
     color: rgb(4, 98, 98);
-    transition: 0.1s;
+    transition: all 0.1s;
     transform: scale(1.2);
 }
 
@@ -105,6 +156,25 @@ h1, h2{
 }
 
 #homework:hover{
+    filter: saturate(200%);
+    width: 80%;
+}
+
+#quizzes{
+    background-color:rgb(255, 248, 180);
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#quizzes:hover{
     filter: saturate(200%);
     width: 80%;
 }
