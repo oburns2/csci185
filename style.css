@@ -45,6 +45,7 @@ body{
     color: black;
     border: solid 1px black;
     padding: 10px;
+    background-color: rgb(189, 189, 189);
 }
 
 .navlink-1:hover{
@@ -177,4 +178,11 @@ h1, h2{
 #quizzes:hover{
     filter: saturate(200%);
     width: 80%;
+}
+
+footer{
+    width: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
