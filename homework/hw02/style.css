@@ -139,17 +139,16 @@ nav{
 }
 
 
+
 /*************************/
 /* Part C: Artists Panel */
 /*************************/
 
 #featured-content{
-    display: grid;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: auto auto auto auto auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-
-
 
 
 
