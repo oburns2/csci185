@@ -20,3 +20,13 @@ const makeOrange = () => {
     console.log('Change background to orange');
 };
 
+const makeRainbow = () => {
+    // your code here...
+    console.log('Change background to red');
+    document.querySelector('#section1').style.backgroundColor = 'red';
+    document.querySelector('#section2').style.backgroundColor = 'orange';
+    document.querySelector('#section3').style.backgroundColor = 'yellow';
+    document.querySelector('#section4').style.backgroundColor = 'green';
+    document.querySelector('#section5').style.backgroundColor = 'blue';
+    document.querySelector('#section6').style.backgroundColor = 'purple';
+};

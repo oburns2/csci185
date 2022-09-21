@@ -83,7 +83,17 @@ footer {
 /* Part A: Left Navigation */
 /***************************/
 
-/* Your Code Here */
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+i {
+    padding: 10px;
+}
+
 
 
 
@@ -91,19 +101,53 @@ footer {
 /* Part B: Header & Nav Styling */
 /********************************/
 
-/* Your Code Here */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 30px;
+    padding: 20px;
+}
 
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+}
 
+#upgrade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid white 1px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 110px;
+    height: 30px;
+}
 
+#profile{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: rgb(50, 50, 50);
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /*************************/
 /* Part C: Artists Panel */
 /*************************/
 
-/* Your Code Here.
-   For the desktop view, there should be 5 cards per row.
-*/
+#featured-content{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
+}
 
 
 
