@@ -71,11 +71,14 @@ body{
 a{
     text-decoration: none;
 }
-a:hover{
+
+
+/* a:hover{
     color: rgb(4, 98, 98);
     transition: all 0.1s;
     transform: scale(1.2);
-}
+} */
+
 
 #tutorials{
     background-color: rgb(185, 227, 241);
@@ -185,4 +188,12 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/**  SECTIONS  **/
+
+.tutorials-group{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
