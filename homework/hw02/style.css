@@ -146,10 +146,35 @@ nav{
 
 #featured-content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
 }
 
+.artist-card{
+    border-radius: 15%;
+    background-color:rgb(47, 47, 47);
+    width: 19%;
+    height: 40vh;
+    padding: 10px;
+}
+
+.artist{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    border-radius: 50%;
+}
+
+.play-button{
+    opacity: 0%;
+    transition: all 0.3s;
+}
+
+.artist-card:hover .play-button{
+    opacity: 100%;
+}
 
 
 
@@ -160,19 +185,21 @@ nav{
 /* Your Code Here */
 
 @media screen and (max-width: 1000px) {
-    /* 
-        Tablet Display: 3 cards per row!
-    
-    */
+.artist-card{
+    width: 32%;
+}
 }
 
 
 @media screen and (max-width: 700px) {
-    /* Mobile Display 
-        * 2 cards per row
-        * The aside panel and "Upgrade" button should no longer be visible.
-        * There should only be a 1-column layout.
-    */
+    .artist-card{
+        width: 49%;
+    }
+
+    #sidebar{
+        display: none;
+    }
+
 }
 
 
