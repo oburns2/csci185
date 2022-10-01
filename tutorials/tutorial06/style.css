@@ -127,15 +127,3 @@ h1 {
     margin: 0 auto;
     line-height: 250%;
 } 
-
-#dyslexia-toggle {
-  padding: 1em;
-  font-size: 18pt;
-  letter-spacing: 0.35ch;
-  float:right;
-}
-
-.dyslexia-mode #dyslexia-toggle {
-  background-color: #115c7d;
-  color: #fff;
-}

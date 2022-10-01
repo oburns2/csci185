@@ -80,41 +80,6 @@ a{
 } */
 
 
-#tutorials{
-    background-color: rgb(185, 227, 241);
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px;
-    transition: 0.4s;
-    height: 32%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-#tutorials:hover{
-    filter: saturate(200%);
-    width: 80%;
-}
-#lectures{
-    background-color: rgb(224, 192, 239);
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px;
-    transition: 0.4s;
-    height: 32%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-   
-}
-#lectures:hover{
-    filter: saturate(200%);
-    width: 80%;
-}
 #inspiration {
     background-color: #ecaed0;
     width: 60%;
@@ -190,10 +155,109 @@ footer{
     align-items: center;
 }
 
-/**  SECTIONS  **/
+
+/**  TUTORIALS  **/
+
+
+
+#tutorials{
+    background-color: rgb(185, 227, 241);
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.tut-grp{
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+width: 75%;
+margin: 0 auto;
+}
+
+#tutorials:hover{
+filter: saturate(200%);
+width: 80%;
+}
 
 .tutorials-group{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    width: 15%;
+    background-color: rgb(185, 227, 241);
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.tutorials-group:hover{
+    filter: saturate(200%);
+    width: 30%;
+    }
+
+
+
+/* LECTURES */
+
+
+#lectures{
+    background-color: rgb(224, 192, 239);
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   
+}
+#lectures:hover{
+    filter: saturate(200%);
+    width: 80%;
+}
+
+.lec-grp{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.lectures-group{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 15%;
+    background-color: rgb(224, 192, 239);
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.lectures-group:hover{
+    filter: saturate(200%);
+    width: 30%;
+    }
