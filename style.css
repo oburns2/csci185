@@ -80,25 +80,6 @@ a{
 } */
 
 
-#inspiration {
-    background-color: #ecaed0;
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px;
-    transition: 0.4s;
-    height: 32%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-   
-}
-#inspiration:hover{
-    filter: saturate(200%);
-    width: 80%;
-}
-
 .flexbox{
     display: flex;
     flex-direction: column;
@@ -110,43 +91,7 @@ h1, h2{
     font-family: 'Press Start 2P', cursive;
 }
 
-#homework{
-    background-color:rgb(180, 255, 200);
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px;
-    transition: 0.4s;
-    height: 32%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
 
-#homework:hover{
-    filter: saturate(200%);
-    width: 80%;
-}
-
-#quizzes{
-    background-color:rgb(255, 248, 180);
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px;
-    transition: 0.4s;
-    height: 32%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-#quizzes:hover{
-    filter: saturate(200%);
-    width: 80%;
-}
 
 footer{
     width: 10vh;
@@ -261,3 +206,157 @@ width: 80%;
     filter: saturate(200%);
     width: 30%;
     }
+
+
+
+    /* HOMEWORK*/
+
+    #homework{
+        background-color:rgb(180, 255, 200);
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+        transition: 0.4s;
+        height: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    #homework:hover{
+        filter: saturate(200%);
+        width: 80%;
+    }
+
+    .hw-grp{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    .homework-group{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 15%;
+        background-color: rgb(180, 255, 200);
+        margin: 0 auto;
+        padding: 20px;
+        transition: 0.4s;
+        height: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .homework-group:hover{
+        filter: saturate(200%);
+        width: 30%;
+        }
+
+
+/* QUIZZES */
+
+#quizzes{
+    background-color:rgb(255, 248, 180);
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#quizzes:hover{
+    filter: saturate(200%);
+    width: 80%;
+}
+
+.qz-grp{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.quiz-group{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 15%;
+    background-color: rgb(255, 248, 180);
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-group:hover{
+    filter: saturate(200%);
+    width: 30%;
+    }
+
+
+    /* DESIGN INSPO */
+
+    #inspiration {
+        background-color: #ecaed0;
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+        transition: 0.4s;
+        height: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+       
+    }
+    #inspiration:hover{
+        filter: saturate(200%);
+        width: 80%;
+    }
+
+    .di-grp{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    .design-group{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 15%;
+        background-color: #ecaed0;
+        margin: 0 auto;
+        padding: 20px;
+        transition: 0.4s;
+        height: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .design-group:hover{
+        filter: saturate(200%);
+        width: 30%;
+        }
