@@ -63,3 +63,12 @@ function draw() {
     rightWall.x += rightWall.speed;
     console.log("ball x position is:", ball.x);
 }
+
+const changeBallColor = ev => {
+    console.log(ev.code);
+    if (ev.code == 'KeyR') {
+        console.log('Change Ball to Red!');
+    }
+}
+
+document.addEventListener('keydown', changeBallColor);
