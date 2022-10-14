@@ -5,11 +5,24 @@ function setup() {
 
     // fill('red');
     noFill();
-    circle(100, 200, 50);
-    circle(100, 250, 50);
-    circle(100, 300, 50);
-    circle(100, 350, 50);
-    circle(100, 400, 50);
+    // 1. what do we want to repeat? = draw a circle
+    // 2. how long do we want to repeat it? = 5 times
+    // 3. what will change each time? = y position by 50
+
+    let x = canvasWidth/2;
+    let y = canvasHeight/2;
+    let size = canvasWidth;
+    let fillColor = 'black';
+    while(size >= 0) {
+        if (fillColor == 'black'){
+            fillColor = 'white';
+        } else {
+            fillColor = 'black';
+        }
+        fill(fillColor);
+        circle(x, y, size);
+        size -= 25;
+    }
 
     drawGrid(canvasWidth, canvasHeight);
 }

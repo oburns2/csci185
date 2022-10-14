@@ -1,6 +1,6 @@
 // Global Variables
 const secret = Math.floor(Math.random() * 99) + 1;
-document.querySelector('#secret').innerHTML = secret;
+// document.querySelector('#secret').innerHTML = secret;
 let count = 0;
 
 
