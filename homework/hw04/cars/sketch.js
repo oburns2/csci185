@@ -32,7 +32,7 @@ function draw() {
 
     // move the car:
     c1.x += c1.speed;
-     c2.x -= c2.speed;
+    c2.x -= c2.speed;
 
    
      if(c1.x == 1600){
