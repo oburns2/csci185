@@ -54,7 +54,6 @@ function moveController(ev) {
     } else if (ev.code == 'Space') {
         shoot();
     }
-    
     // message
    displayMessage();
 }

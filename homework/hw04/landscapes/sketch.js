@@ -20,16 +20,16 @@ while (i < 1000) {
 
 
 
-// function drawStars() {
-//     strokeWeight(0);
-//     fill('white');
-//     for (let i = 0; i < 1000; i++) {
-//         const x = Math.random() * canvasWidth;
-//         const y = Math.random() * canvasHeight;
-//         const width = Math.random() * 2 + 0.5;
-//         circle(x, y, width);
-//     }
-// }
+function drawStars() {
+    strokeWeight(0);
+    fill('white');
+    for (let i = 0; i < 1000; i++) {
+        const x = Math.random() * canvasWidth;
+        const y = Math.random() * canvasHeight;
+        const width = Math.random() * 2 + 0.5;
+        circle(x, y, width);
+    }
+}
 
 // function drawBubbles() {
 //     strokeWeight(1);

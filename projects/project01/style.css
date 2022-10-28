@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-}
-main {
-    height: 100vh;
+    padding: none;
+    background-color: black;
+    overflow: hidden;
 }

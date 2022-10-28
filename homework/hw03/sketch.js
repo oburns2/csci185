@@ -56,8 +56,4 @@ function drawCreature(centerX, centerY, size, primaryColor, secondaryColor, fill
         centerX, centerY+sf*1.8,
     )
     strokeWeight(1); 
-    
-
-
-   
 }
