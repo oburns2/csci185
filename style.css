@@ -38,7 +38,7 @@ body{
     transition: 0.5s;
 }
 
-.navlink-1, .navlink-2, .navlink-3, .navlink-4, .navlink-5{
+.navlink-1, .navlink-2, .navlink-3, .navlink-4, .navlink-5, .navlink-6{
     text-decoration: none;
     font-family: 'Press Start 2P', cursive;
     transition: all 0.1s;
@@ -66,6 +66,9 @@ body{
 
 .navlink-5:hover{
     background-color: #ecaed0;
+}
+.navlink-6:hover{
+    background-color: #FFDDA2;
 }
 
 a{
@@ -360,3 +363,55 @@ width: 80%;
         filter: saturate(200%);
         width: 30%;
         }
+
+
+
+/* PROJECTS */
+
+#projects{
+    background-color:#FFDDA2;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#projects:hover{
+    filter: saturate(200%);
+    width: 80%;
+}
+
+.pj-grp{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.project-group{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 15%;
+    background-color:#FFDDA2;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 0.4s;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-group:hover{
+    filter: saturate(200%);
+    width: 30%;
+    }
