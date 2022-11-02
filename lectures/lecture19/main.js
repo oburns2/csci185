@@ -22,21 +22,26 @@ async function fetchCourses() {
             * Only view classes that meet on Tuesdays and Thursdays? 
 */
 function displayResults(data) {
-    // Get the data in Inspect > Console;
-    console.log(data[0].Title);
-    console.log(data[0].Department);
-    console.log(data[0].Instructors[0].Name);
-
-
-    //Target the element in the DOM and change its inner content (make data show up on the page)
-
-    
-    const template = `
-    <section>
-        <h2>${data[0].Code}: ${data[0].Title}</h2>
-        <p>${data[0].Location.FullLocation}</p>
-        <p>${data[0].Instructors[0].Name}</p>
-    </section>`
-
-document.querySelector('#results').innerHTML = template;
+    for(let i=0; i < data.length; i++){
+        const course = data[i];
+        console.log(course);
+        if(course.Classification.DiversityIntensiveR == true){
+            displayCourse(course);
+        }
 }
+}
+
+function displayCourse(){
+        let instructor = 'TBD';
+        if (course.Instructors.length > 0) {
+            instructor = course.Instructors[0].Name;
+        }
+            const template = `
+            <section>
+                <h2>${course.Code}: ${course.Title}</h2>
+                <p>${course.Location.FullLocation}</p>
+                <p>${instructor}</p>
+            </section>`
+    
+        document.querySelector('#results').insertAdjacentHTML('beforeend', template);
+    }
