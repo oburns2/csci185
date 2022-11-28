@@ -1,3 +1,14 @@
+const art = [
+  {image_url:"art/revaandholly.jpg"},
+  {image_url:"art/ancient.png"},
+  {image_url:"art/aspen.jpg"},
+  {image_url:"art/rhys.jpg"},
+  {image_url:"art/cori.jpg"},
+  {image_url:"art/"},
+  {image_url:"art/"},
+  {image_url:"art/"},
+]
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -24,4 +35,12 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
+}
+
+function showArt(){
+  for(let i = 0; i < art.length; i++){
+    const template=`
+    <img class="drawing" src="art/revaandholly.jpg">`
+    document.querySelector('.art-container').insertAdjacentHTML ('beforeend', template);
+  }
 }

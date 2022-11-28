@@ -23,7 +23,7 @@ async function getTracks (term) {
     for(let i=0; i < 5; i++){
     const template =`
     <section class="track-item preview" onclick="playSong('${data[i].id}')">
-    <img src="${data[i].album.image_url}">
+    <img src="${data[i].album.image_url}" alt="${data[i].name}'s album cover.">
     <i class="fas play-track fa-play" aria-hidden="true"></i>
     <div class="label">
         <h2>${data[i].name}</h2>
@@ -54,6 +54,7 @@ function playSong(id){
             loading="lazy">
         </iframe>`
         document.querySelector('#artist').innerHTML = template;
+        document.querySelector('#artist-section h1').innerHTML = "Now Playing";
 }
 
 
@@ -66,6 +67,22 @@ async function getAlbums (term) {
     if(data.length === 0){
         document.querySelector('#albums').innerHTML = "No Results Found";
         return;
+    }
+    document.querySelector('#albums').innerHTML = "";
+    for(let i=0; i < data.length; i++){
+    const template =`
+    <section class="album-card" id="2lATw9ZAVp7ILQcOKPCPqp">
+                        <div>
+                            <img src="${data[i].image_url}" alt="${data[i].name}'s album cover">
+                            <h2>${data[i].name}</h2>
+                            <div class="footer">
+                                <a href="${data[i].spotify_url}" target="_blank">
+                                    view on spotify
+                                </a>
+                            </div>
+                        </div>
+                    </section>`
+    document.querySelector('#albums').insertAdjacentHTML('beforeend', template);
     }
 }
 
@@ -88,7 +105,7 @@ async function getArtist (term) {
     const template = `
     <section class="artist-card" id="3Nrfpe0tUJi4K4DXYWgMUX">
                             <div>
-                                <img src="${data[0].image_url}">
+                                <img src="${data[0].image_url}" alt="A picture of ${data[0].name}">
                                 <h2>${data[0].name}</h2>
                                 <div class="footer">
                                     <a href="${data[0].spotify_url}" target="_blank">
