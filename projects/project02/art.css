@@ -54,11 +54,10 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 95%;
+    width: 97%;
     height: 100%;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    border: solid 1px green;
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -71,3 +70,4 @@ a{
     height: 300px;
     object-fit: cover;
   }
+  
