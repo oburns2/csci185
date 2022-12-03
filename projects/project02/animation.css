@@ -48,36 +48,22 @@ a{
     color: white;
 }
 
-/* ART PAGE */
 
+/** ANIMATION **/
 
-.art-container{
+.content{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 97%;
-    height: 100%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    gap: 20px;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-  }
-  
-  .drawing{
-    border-radius: 10%;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    transition: 0.2s;
-    cursor: pointer;
-    z-index: 0;
-    filter: saturate(70%);
-  }
-  
-  .drawing:hover{
-    filter: saturate(100%);
-    transition: 0.2s;
-    width: 400px;
-  }
+    padding-top: 12vh;
+    padding-bottom: 10vh;
+    width: 90%;
+    gap: 30px;
+}
 
+.explanation{
+    background-color: #8C9A9E;
+    border-radius: 30px;
+    padding: 10px;
+}
